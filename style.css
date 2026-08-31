@@ -21,9 +21,9 @@ body {
     margin: 10px 0px 10px 300px;
 }
 
-#logo {
-    margin: 10px;
-    font-size: 24px;
+.logo {
+    margin: 0px;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #0D7A5F;
     padding: 10px;   
@@ -38,6 +38,7 @@ body {
     border-radius: 20px;
     padding: 10px;
     margin: 10px 0px 10px 50%;
+    white-space: nowrap;
 }
 
 .section-logo .a2 {
@@ -177,4 +178,58 @@ footer{
     box-sizing: border-box;
     margin: 0;
     padding: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
+  width: 25%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+.contenedor-formulario {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+textarea {
+  width: 25%;
+  max-width: 500px;
+  height: 150px;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #999999;
+  font-style: italic;
+  font-size: 16px;
+}
+
+button {
+  padding: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
