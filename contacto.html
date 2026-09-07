@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta etiquetas esenciales para SEO -->
     <title>Contacto y Presupuestos | OficiosYA</title>
     <meta name="description" content="Ponte en contacto con OficiosYA. Solicita presupuestos gratuitos y encuentra al profesional ideal para reparaciones, instalaciones y refacciones.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oficiosya.com">
 
-    <!-- Open Graph para Redes Sociales -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contacto y Presupuestos | OficiosYA">
     <meta property="og:description" content="Ponte en contacto con OficiosYA. Solicita presupuestos gratuitos y encuentra al profesional ideal para reparaciones, instalaciones y refacciones.">
     <meta property="og:image" content="https://oficiosya.com/imagenes/compartir-seo.jpg">
     <meta property="og:url" content="https://oficiosya.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Encabezado accesible -->
     <header>
-        <p><strong>OficiosYA</strong></p>
-        <nav aria-label="Menú">
+        <section class="section-logo">
+            <p class="logo"><strong>OficiosYA</strong></p>
+            <a class="a1" href="">Registrate/Inicia sesion</a>
+            <a class="a2" href="">Conviertete en Profesional</a>
+        </section>
+        <nav class="navbar" aria-label="Menú">
             <ul>
-                <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
-                <li><a href="http://127.0.0.1:5500/servicios.html">Servicios</a></li>
-                <li><a href="http://127.0.0.1:5500/contacto.html">Contacto</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html#pepito">Servicios</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="contacto">
+            <div class="contenedor-formulario">
             <h1>Ponte en contacto con nosotros</h1>
-            <p>Completa el formulario indicando el tipo de servicio que requieres y te responderemos a la brevedad.</p>
+            <p>Completa el formulario indicando tu solicitud y te responderemos a la brevedad.</p>
 
             <form action="http://127.0.0" method="POST">
                 <div>
@@ -48,38 +55,20 @@
                 </div>
 
                 <div>
-                    <label for="servicio">Servicio requerido:</label>
-                    <select id="servicio" name="servicio" required>
-                        <option value="">Seleccione una opción...</option>
-                        <option value="plomeria">Plomería</option>
-                        <option value="gas">Instalaciones de Gas</option>
-                        <option value="albanileria">Albañilería y Reformas</option>
-                        <option value="electricidad">Electricidad</option>
-                        <option value="carpinteria">Carpintería y Ebanistería</option>
-                        <option value="pintura">Pintura y Decoración</option>
-                        <option value="jardineria">Jardinería y Paisajismo</option>
-                        <option value="limpieza">Limpieza y Mantenimiento</option>
-                        <option value="mudanzas">Mudanzas y Transporte</option>
-                        <option value="cerrajeria">Cerrajería</option>
-                        <option value="climatizacion">Aire Acondicionado y Climatización</option>
-                    </select>
-                </div>
-
-                <div>
                     <label for="mensaje">Detalles de tu solicitud:</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí las especificaciones del trabajo o reparación que necesitas..." rows="5" required></textarea>
+                    <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Escribe aquí su consulta." rows="10" required></textarea>
                 </div>
 
                 <button type="submit">Enviar mensaje</button>
             </form>
+            </div>
         </section>
     </main>
 
-    <!-- Pie de página con datos de contacto semánticos -->
     <footer>
         <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
         <address>
-            <p>Contacto: <a href="mailto:camr.7.9.96@gmail.com">contacto@oficiosya.com</a></p>
+            <p>Contacto: <a href="mailto:contacto@oficiosya.com">contacto@oficiosya.com</a></p>
         </address>
     </footer>
 
