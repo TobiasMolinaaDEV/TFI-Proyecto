@@ -1,5 +1,4 @@
 ### TFI-PROYECTO
-
 ## Integrantes: 
 ---- Moschino Molina Tobias
 ---- Gonzalez Raflo Luz
@@ -27,10 +26,21 @@ Además de HTML y CSS, utilizamos Git y GitHub para el control de versiones y tr
 `#servicios .servicio`: dentro de cada tarjeta, grid de 3 filas (repeat(3, 1fr)) para ordenar título, descripción y enlace.
 
 ## ¿Qué variables CSS crearon?
-Definidas en `root`: `--color-primary` (#OD7A5F), `--color-accent`(D8F373), `--color-bg-buscador` (#FFCE4), `--color-footer-bg` (#67727E), `--color-white`, `--color-text-dark `, `--font-body`, `--radius-btn`(20px), `--radius-card`(10px), `--gap-md` (20px) y `--gap-sm`(10px).
+Se centralizaron los colores utilizados en todo el sitio mediante variables CSS, definidas en el selector `:root` de `stryle.css`. Esto permite reutilizar los mismos valores en multiples reglas y facilita el mantenimiento: si se necesita cambiar un color, alcanza con modificarlo en un único lugar.
+```css
+:root {
+    --color-primario: #0D7A5F;
+    --color-secundario: #D8F373;
+    --color-fondo-buscador: #FFFCE4;
+    --color-fondo-footer: #67727E:
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-placeholder: #999999;
+    --color-overlay: rgba(o,o,o,o.35)
 
+}
 ## ¿Cómo implementaron el Responsive Design?
-Con dos media queries: en tablet (`max-width: 900px`) la grilla de servicios pasa de 3 a 2 columnas; en mobile (`max- width: 600px`) pasa a 1 columna, el header se apila en columna, el titulo del hero se achica y se reducen los paddings del buscador y del footer. 
+El diseño responsive del sitio se logró con tres medias queries: en tablets grandes (max-width: 992px`) la grilla de servicios pasa de 3 a 2 columnas y la sección del logo permite salto de línea; en tablets chicas (`max-width: 768px`) el navbar se acomoda en varias líneas y los inputs amplían su ancho al 70%; en celulares (`max-width: 480px`) el navbar, el logo y los servicios pasan a una sola columna, los formularios ocupan el 90% del ancho y se reduce el tamaño de fuente del título del hero.
 
 ## Estrategias de SEO implementadas
 1. **Meta etiquetas esenciales**: `title` único y descriptivo por página, `meta descrption`, `meta robots` (index,follow) y `link rel="canonical"`.
@@ -42,4 +52,5 @@ Con dos media queries: en tablet (`max-width: 900px`) la grilla de servicios pas
 7. **Texto alternativo en imágenes**: atributo `alt` descriptivo en las imágenes (ej. la del hero).
 8. **Optimización de carga de fuentes**: `preconnect` a Google Fonts, lo que mejora la velocidad de carga y es un factor de posicionamiento.
 9. **Formulario de búsqueda con método GET**: genera URLs rastreables por los buscadores en vez de ocultar los parámetros de búsqueda.
+
 
