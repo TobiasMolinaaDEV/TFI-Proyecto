@@ -55,4 +55,3 @@ El diseño responsive del sitio se logró con tres media queries: en tablets gra
 8. **Optimización de carga de fuentes**: `preconnect` a Google Fonts, lo que mejora la velocidad de carga y es un factor de posicionamiento.
 9. **Formulario de búsqueda con método GET**: genera URLs rastreables por los buscadores en vez de ocultar los parámetros de búsqueda.
 
-

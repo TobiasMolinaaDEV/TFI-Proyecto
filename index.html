@@ -8,7 +8,7 @@
     <meta name="description" content="Encuentra trabajadores calificados para tus proyectos en OficiosYA. Conecta con profesionales confiables y eficientes en tu área.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oficiosya.com">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Open Graph para optimizar cómo se comparte en Redes Sociales (Facebook, LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Encuentra trabajadores | OficiosYA">
@@ -147,6 +147,95 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<<<<<<< HEAD
+  <header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+        <img src="/img/loro.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        OficiosYA
+      </a>
+
+      <!-- BOTÓN RESPONSIVE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOficiosYA"
+        aria-controls="navbarOficiosYA" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- CONTENIDO -->
+      <div class="collapse navbar-collapse" id="navbarOficiosYA">
+
+        <!-- LISTADO CENTRADO EN LA PANTALLA -->
+        <ul class="navbar-nav position-absolute start-50 translate-middle-x">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/servicios.html">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- BOTONES AL FINAL -->
+        <div class="d-flex gap-2 ms-auto">
+          <button class="btn btn-primary">
+            Registrarse / Iniciar sesión
+          </button>
+
+          <button class="btn btn-primary">
+            Conviértete en profesional
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+  </header>
+  <main>
+    <section id="principal" class="container-fluid p-0">
+  
+      <div class="row align-items-center g-0 w-100">
+  
+        <!-- IZQUIERDA -->
+        <div class="col-2 text-start">
+          <img src="/img/top_left_shape.svg" alt="Forma superior izquierda" class="img-fluid
+                  forma-izquierda">
+        </div>
+  
+        <!-- CENTRO -->
+        <div class="col-8">
+          <div class="card-overlay-main position-relative overflow-hidden">
+  
+            <img src="/img/trabajador-carousel.jpg" alt="Trabajador de OficiosYA" class="w-100 h-100">
+  
+            <div class="overlay"></div>
+  
+            <div class="text-overlay">
+              <h1>OficiosYA - Servicios Profesionales a tu Medida</h1>
+  
+              <p>
+                Servicios de calidad para satisfacer tus necesidades.
+              </p>
+  
+              <a href="/contacto.html" class="btn btn-primary">
+                Ponte en contacto con nosotros
+              </a>
+  
+              <br>
+  
+              <a href="/trabajos.html" class="btn btn-secondary">
+                Ver oportunidades de trabajo
+              </a>
+            </div>
+  
+=======
     <header>
       <section class="section-logo">
         <p class="logo"><strong>OficiosYA</strong></p>
@@ -157,6 +246,7 @@
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
                 <li><a href="#pepito">Servicios</a></li>
+                <li><a href="/about_me.html">Sobre Nosotros</a></li>
                 <li><a href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -172,89 +262,136 @@
             <a href="/contacto.html" class="btn btn-primary">Ponte en contacto con nosotros</a>
             <br>
             <a href="/trabajos.html" class="btn btn-secondary">Ver oportunidades de trabajo</a>
+>>>>>>> d311c53 (Reconstruí about_me.html usando Bootstrap)
           </div>
         </div>
-        </section>
-    
-        <h2 id="pepito">Nuestros Servicios de Oficios y Mantenimiento</h2>
-        <section id="servicios">
-           
-            <article class="servicio">
-                <h3>Plomería</h3>
-                <p>Reparación de filtraciones, destapes de cañerías e instalación de griferías.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#plomeria" title="Saber más sobre servicios de plomería profesional">Ver detalles de Plomería</a>
+  
+        <!-- DERECHA -->
+        <div class="col-2 text-end align-self-start">
+          <img src="/img/top_right_shape.svg" alt="Forma superior derecha" class="img-fluid 
+            forma-derecha"">
+          </div>
+  
+      </div>
+  
+    </section>
+    <section>
+      <br>
+      <br>
+      <br>
+      </section>
+      <h2 id="pepito">Nuestros Servicios de Oficios y Mantenimiento</h2>
+          <section id="servicios">
+  
+            <article class="servicio" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="Imagen de Plomería">
+              <div class="card-body">
+                <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.</p>
+              </div>
             </article>
-            <article class="servicio">
-                <h3>Instalaciones de Gas</h3>
-                <p>Detección de fugas, habilitaciones e instalación de estufas y calefones por gasista matriculado.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#instalaciones-gas" title="Saber más sobre gasistas matriculados">Ver detalles de Instalaciones de Gas</a>
+  
+            <article class="servicio" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="Imagen de Plomería">
+              <div class="card-body">
+                <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.</p>
+              </div>
             </article>
+  
+  
             <article class="servicio">
-                <h3>Albañilería y Reformas</h3>
-                <p>Arreglos de mampostería, colocación de cerámicos y revoques.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#albañileria-reformas" title="Saber más sobre albañilería y reformas del hogar">Ver detalles de Albañilería y Reformas</a>
+              <h3>Instalaciones de Gas</h3>
+              <p>Detección de fugas, habilitaciones e instalación de estufas y calefones por gasista matriculado.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#instalaciones-gas"
+                title="Saber más sobre gasistas matriculados">Ver detalles de Instalaciones de Gas</a>
             </article>
-            <article class="servicio">
-                <h3>Electricidad</h3>
-                <p>Reparación de instalaciones eléctricas, iluminación y mantenimiento de tableros.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#electricidad" title="Saber más sobre electricistas profesionales">Ver detalles de Electricidad</a>
-            </article>
-            <article class="servicio">
-                <h3>Carpintería y Ebanistería</h3>
-                <p>Fabricación y reparación de muebles, puertas y ventanas de madera.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#carpinteria-ebanisteria" title="Saber más sobre trabajos de carpintería a medida">Ver detalles de Carpintería y Ebanistería</a>
-            </article>
-            <article class="servicio">
-                <h3>Pintura y Decoración</h3>
-                <p>Pintura de interiores y exteriores, decoración y acabados.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#pintura-decoracion" title="Saber más sobre servicios de pintura profesional">Ver detalles de Pintura y Decoración</a>
-            </article>
-            <article class="servicio">
-                <h3>Jardinería y Paisajismo</h3>
-                <p>Mantenimiento de jardines, diseño de paisajes y cuidado de plantas.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#jardineria-paisajismo" title="Saber más sobre mantenimiento de jardines y paisajes">Ver detalles de Jardinería y Paisajismo</a>
-            </article>
-            <article class="servicio">
-                <h3>Limpieza y Mantenimiento</h3>
-                <p>Servicios de limpieza profesional para hogares y oficinas.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#limpieza-mantenimiento" title="Saber más sobre limpieza profesional en casas y oficinas">Ver detalles de Limpieza y Mantenimiento</a>
-            </article>
-            <article class="servicio">
-                <h3>Mudanzas y Transporte</h3>
-                <p>Servicios de mudanza, transporte de muebles y logística.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#mudanzas-transporte" title="Saber más sobre fletes y mudanzas seguras">Ver detalles de Mudanzas y Transporte</a>
-            </article>
-            <article class="servicio">
-                <h3>Cerrajería</h3>
-                <p>Apertura de cerraduras, duplicado de llaves y reparación de sistemas de seguridad.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#cerrajeria" title="Saber más sobre cerrajeros de urgencia y seguridad">Ver detalles de Cerrajería</a>
-            </article>
-            <article class="servicio">
-                <h3>Aire Acondicionado y Climatización</h3>
-                <p>Instalación, mantenimiento y reparación de sistemas de aire acondicionado y calefacción.</p>
-                <a href="http://127.0.0.1:5500/servicios.html#aire-acondicionado-climatizacion" title="Saber más sobre instalación y service de aire acondicionado">Ver detalles de Aire Acondicionado</a>
-            </article>
-        </section>
 
-        <section id="buscador">
+
+            <article class="servicio">
+              <h3>Albañilería y Reformas</h3>
+              <p>Arreglos de mampostería, colocación de cerámicos y revoques.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#albañileria-reformas"
+                title="Saber más sobre albañilería y reformas del hogar">Ver detalles de Albañilería y Reformas</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Electricidad</h3>
+              <p>Reparación de instalaciones eléctricas, iluminación y mantenimiento de tableros.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#electricidad"
+                title="Saber más sobre electricistas profesionales">Ver detalles de Electricidad</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Carpintería y Ebanistería</h3>
+              <p>Fabricación y reparación de muebles, puertas y ventanas de madera.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#carpinteria-ebanisteria"
+                title="Saber más sobre trabajos de carpintería a medida">Ver detalles de Carpintería y Ebanistería</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Pintura y Decoración</h3>
+              <p>Pintura de interiores y exteriores, decoración y acabados.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#pintura-decoracion"
+                title="Saber más sobre servicios de pintura profesional">Ver detalles de Pintura y Decoración</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Jardinería y Paisajismo</h3>
+              <p>Mantenimiento de jardines, diseño de paisajes y cuidado de plantas.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#jardineria-paisajismo"
+                title="Saber más sobre mantenimiento de jardines y paisajes">Ver detalles de Jardinería y Paisajismo</a>
+            </article>
+            <article class="servicio">
+              <h3>Limpieza y Mantenimiento</h3>
+              <p>Servicios de limpieza profesional para hogares y oficinas.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#limpieza-mantenimiento"
+                title="Saber más sobre limpieza profesional en casas y oficinas">Ver detalles de Limpieza y
+                Mantenimiento</a>
+            </article>
+            <article class="servicio">
+              <h3>Mudanzas y Transporte</h3>
+              <p>Servicios de mudanza, transporte de muebles y logística.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#mudanzas-transporte"
+                title="Saber más sobre fletes y mudanzas seguras">Ver detalles de Mudanzas y Transporte</a>
+            </article>
+            <article class="servicio">
+              <h3>Cerrajería</h3>
+              <p>Apertura de cerraduras, duplicado de llaves y reparación de sistemas de seguridad.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#cerrajeria"
+                title="Saber más sobre cerrajeros de urgencia y seguridad">Ver detalles de Cerrajería</a>
+            </article>
+            <article class="servicio">
+              <h3>Aire Acondicionado y Climatización</h3>
+              <p>Instalación, mantenimiento y reparación de sistemas de aire acondicionado y calefacción.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#aire-acondicionado-climatizacion"
+                title="Saber más sobre instalación y service de aire acondicionado">Ver detalles de Aire Acondicionado</a>
+            </article>
+          </section>
+  
+          <section id="buscador">
             <h2>Buscador de Servicios</h2>
             <p>Encuentra el servicio que necesitas de manera rápida y sencilla.</p>
-
+  
             <!-- El método GET permite que los resultados de búsqueda generen URLs rastreables si es necesario -->
             <form action="http://127.0.0.1:5500/servicios.html#" method="GET" role="">
-                <label for="buscar">Filtrar servicios por palabra clave:</label>
-                <input type="search" id="buscar" name="query" placeholder="Ej. limpieza, mudanza, cerrajería..." required>
-                <button type="submit">Buscar servicios</button>
+              <label for="buscar">Filtrar servicios por palabra clave:</label>
+              <input type="search" id="buscar" name="query" placeholder="Ej. limpieza, mudanza, cerrajería..." required>
+              <button type="submit">Buscar servicios</button>
             </form>
-        </section>
-    </main>
+          </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
-        <address>
-            <p>Contacto: <a href="mailto:contacto@oficiosya.com">contacto@oficiosya.com</a></p>
-        </address>
-    </footer>
-
+  <footer>
+    <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
+    <address>
+      <p>Contacto: <a href="mailto:contacto@oficiosya.com">contacto@oficiosya.com</a></p>
+    </address>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 </html>
