@@ -39,6 +39,8 @@ Se centralizaron los colores utilizados en todo el sitio mediante variables CSS,
     --color-overlay: rgba(o,o,o,o.35)
 
 }
+```
+
 ## ¿Cómo implementaron el Responsive Design?
 El diseño responsive del sitio se logró con tres media queries: en tablets grandes (max-width: 992px`) la grilla de servicios pasa de 3 a 2 columnas y la sección del logo permite salto de línea; en tablets chicas (`max-width: 768px`) el navbar se acomoda en varias líneas y los inputs amplían su ancho al 70%; en celulares (`max-width: 480px`) el navbar, el logo y los servicios pasan a una sola columna, los formularios ocupan el 90% del ancho y se reduce el tamaño de fuente del título del hero.
 
