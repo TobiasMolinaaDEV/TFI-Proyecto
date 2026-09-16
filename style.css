@@ -112,7 +112,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #2B4C32;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -129,8 +129,9 @@ body {
 ---------------------------
 
 #servicios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);*/
     gap: 20px;
     padding: 20px;
     margin: 0;
@@ -148,8 +149,10 @@ body {
     
 }
 #servicios .servicio{
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    flex-direction: column;
+    text-align: center;
     gap: 20px;
     background-color: #0D7A5F;
     color: white;
