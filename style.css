@@ -9,7 +9,7 @@
   --color-overlay: rgba(0, 0, 0, 0.35);
 }
 
-body {
+/*body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'inter', sans-serif;
@@ -17,12 +17,115 @@ body {
   padding: 0;
   margin: 0;
 }
-
-@media (min-width: 992px) {
-  .navbar-nav {
-    left: 50%;
-  }
+/*footer{
+    text-align: center;
+    color: #FFFFFFFF;
+    background-color: #67727E;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+}*/
+label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
+  width: 25%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+input::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+textarea {
+  width: 25%;
+  max-width: 500px;
+  height: 150px;
+  resize: none;
+}
+textarea::placeholder {
+  color: #999999;
+  font-style: italic;
+  font-size: 16px;
+}
+button {
+  padding: 16px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#principal {
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+
+#principal > div:first-child {
+  text-align: center;
+}
+
+#principal > div:last-child {
+  text-align: center;
+}
+#servicios {
+    /*display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);*/
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+}
+.card-body {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #0D7A5F;
+}
+
+#titulo-servicios {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    background-color:#0D7A5F ;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+#servicios .servicio{
+    display: flex;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    ;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+     
+}
+#buscador{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFFCE4
+}
+
 .navbar-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -45,23 +148,6 @@ body {
   border-color: #0D7A5F;
 
 }
--------------------------------------
-
-#principal {
-  grid-template-columns: 1fr 3fr 1fr;
-  align-items: center;
-  width: 100%;
-}
-
-#principal > div:first-child {
-  text-align: center;
-}
-
-#principal > div:last-child {
-  text-align: center;
-}
-
-
 
 .card-overlay-main {
     position: relative;
@@ -126,42 +212,6 @@ body {
     border-radius: 20px;
     padding: 10px 20px;
 }
----------------------------
-
-#servicios {
-    /*display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);*/
-    gap: 20px;
-    padding: 20px;
-    margin: 0;
-}
-
-#pepito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    
-}
-#servicios .servicio{
-    display: flex;
-    /*grid-template-rows: repeat(3, 1fr);*/
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    background-color: #0D7A5F;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-     
-}
-
 
 .servicio a{
     color: #000000;
@@ -175,77 +225,18 @@ body {
     background-color: #D8F373;
 }
 
-
-#buscador{
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #FFFCE4
-}
-
-footer{
-    text-align: center;
-    color: #FFFFFFFF;
-    background-color: #67727E;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 20px;
-}
-
-label {
-  font-size: 16px;
-  font-weight: bold;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
-  width: 25%;
-  padding: 10px 15px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-input::placeholder {
-  color: #999999;
-  font-style: italic;
-}
-
 .contenedor-formulario {
   max-width: 1200px;
   margin: auto;
   text-align: center;
 }
 
-textarea {
-  width: 25%;
-  max-width: 500px;
-  height: 150px;
-  resize: none;
+.container .row{
+  background-color: #0D7A5F;
 }
 
-textarea::placeholder {
-  color: #999999;
-  font-style: italic;
-  font-size: 16px;
-}
 
-button {
-  padding: 16px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-article {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
   .section-logo {
     flex-wrap: wrap;
     margin: 10px 20px;
@@ -337,3 +328,8 @@ article {
     font-size: 0.9rem;
       }
 }
+@media (min-width: 992px) {
+  .navbar-nav {
+    left: 50%;
+  }
+}*/
