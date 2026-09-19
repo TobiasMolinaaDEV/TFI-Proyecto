@@ -310,6 +310,10 @@ article {
   color: #0D7A5F;
 }
 
+.form-signin {
+  max-width: 330px;
+}
+
 /*@media (max-width: 992px) {
   .section-logo {
     flex-wrap: wrap;
