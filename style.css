@@ -88,12 +88,7 @@ article {
     padding: 20px;
     margin: 0;
 }
-.card-body {
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background-color: #0D7A5F;
-}
+
 
 #titulo-servicios {
     text-align: center;
@@ -102,10 +97,7 @@ article {
     background-color:#0D7A5F ;
 }
 
-.card-body {
-    padding: 20px;
-    text-align: center;
-}
+
 #servicios .servicio{
     display: flex;
     /*grid-template-rows: repeat(3, 1fr);*/
@@ -125,7 +117,12 @@ article {
     padding: 20px;
     background-color: #FFFCE4
 }
-
+.card-body {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #0D7A5F;
+}
 .navbar-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -140,6 +137,81 @@ article {
 }
 .navbar {
   background-color: #0D7A5F;
+}
+
+.navbar .container-fluid {
+  gap: 0.75rem;
+}
+
+.navbar .navbar-collapse {
+  width: 100%;
+}
+
+.navbar .navbar-nav {
+  white-space: nowrap;
+}
+
+.navbar .nav-item,
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .btn {
+  white-space: nowrap;
+}
+
+.navbar form[role="search"] {
+  width: 220px;
+  min-width: 180px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.navbar form[role="search"] .form-control {
+  width: 100%;
+  height: 42px;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.navbar .btn {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.navbar .d-flex.gap-2 {
+  gap: 0.5rem !important;
+}
+
+.navbar .d-flex.gap-2 > * {
+  flex-shrink: 0;
+}
+
+.navbar-toggler {
+  margin-right: 0.5rem;
+}
+
+.navbar-collapse.show .d-flex.gap-2,
+.navbar-collapse.collapsing .d-flex.gap-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem !important;
+  width: 100%;
+}
+
+.navbar-collapse.show form[role="search"],
+.navbar-collapse.collapsing form[role="search"] {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.navbar-collapse.show .btn,
+.navbar-collapse.collapsing .btn {
+  width: 100%;
+  text-align: center;
 }
 
 .btn-primary {
@@ -232,9 +304,11 @@ article {
 }
 
 .container .row{
-  background-color: #0D7A5F;
+  background-color: #FFFFFF;
 }
-
+.container .row h5{
+  color: #0D7A5F;
+}
 
 /*@media (max-width: 992px) {
   .section-logo {

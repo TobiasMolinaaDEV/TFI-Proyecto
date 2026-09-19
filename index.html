@@ -155,46 +155,51 @@
 
 <body>
   <header>
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
-        <!-- LOGO -->
         <a class="navbar-brand" href="#">
           <img src="/img/loro.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
           OficiosYA
         </a>
 
-        <!-- BOTÓN RESPONSIVE -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOficiosYA"
           aria-controls="navbarOficiosYA" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- CONTENIDO -->
         <div class="collapse navbar-collapse" id="navbarOficiosYA">
-
-          <!-- LISTADO CENTRADO EN LA PANTALLA -->
-          <!-- Se quitó position-absolute y se usó mx-auto para centrar de forma responsiva -->
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="/index.html">Inicio</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/servicios.html">Servicios</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/servicios.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/servicios.html">Todos los servicios</a></li>
+                <li><a class="dropdown-item" href="/servicios.html">Mudanza</a></li>
+                <li><a class="dropdown-item" href="/servicios.html">Cerrajería</a></li>
+                <li><a class="dropdown-item" href="/servicios.html">Aire Acondicionado</a></li>
+              </ul>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="/contacto.html">Contacto</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="/about_me.html">Sobre Nosotros</a>
             </li>
           </ul>
 
-          <!-- BOTONES AL FINAL -->
           <div class="d-flex gap-2">
+            <form role="search" action="http://127.0.0.1:5500/servicios.html#" method="GET">
+              <input class="form-control" type="search" id="buscar" name="query" placeholder="Buscar servicios"
+                aria-label="Buscar Servicios" required>
+            </form>
+
             <button class="btn btn-primary">
               Registrarse / Iniciar sesión
             </button>
@@ -212,16 +217,12 @@
   <main>
 
     <section id="principal" class="container-fluid p-0">
-
       <div class="row align-items-center g-0 w-100">
-
-        <!-- IZQUIERDA -->
         <div class="col-2 text-start">
           <img src="/img/top_left_shape.svg" alt="Forma superior izquierda" class="img-fluid
                   forma-izquierda">
         </div>
 
-        <!-- CENTRO -->
         <div class="col-8">
           <div class="card-overlay-main position-relative overflow-hidden">
 
@@ -250,7 +251,6 @@
           </div>
         </div>
 
-        <!-- DERECHA -->
         <div class="col-2 text-end align-self-start">
           <img src="/img/top_right_shape.svg" alt="Forma superior derecha" class="img-fluid 
             forma-derecha"">
@@ -270,225 +270,558 @@
                       <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-plomeria" class="stretched-link text-decoration-none text-white">
+                          Plomería
+                        </a>
+                      </h5>
+                      <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Instalaciones de Gas" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-instalaciones-gas" class="stretched-link text-decoration-none text-white">
+                          Instalaciones de Gas
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación y reparación de instalaciones de gas en viviendas y locales.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Albañilería y Reformas" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-albanileria-reformas" class="stretched-link text-decoration-none text-white">
+                          Albañilería y Reformas
+                        </a>
+                      </h5>
+                      <p class="card-text">Arreglos de mampostería, colocación de cerámicos y revoques.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Electricidad" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-electricidad" class="stretched-link text-decoration-none text-white">
+                          Electricidad
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación y reparación de instalaciones eléctricas en viviendas y locales.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Carpintería y Ebanistería" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-carpinteria-ebanisteria"
+                          class="stretched-link text-decoration-none text-white">
+                          Carpintería y Ebanistería
+                        </a>
+                      </h5>
+                      <p class="card-text">Fabricación y reparación de muebles, puertas, ventanas y otros elementos de
+                        madera.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Pintura y Decoración" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-pintura-decoracion" class="stretched-link text-decoration-none text-white">
+                          Pintura y Decoración
+                        </a>
+                      </h5>
+                      <p class="card-text">Pintura de viviendas y locales, así como trabajos de decoración.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Jardinería y Paisajismo" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-jardineria-paisajismo" class="stretched-link text-decoration-none text-white">
+                          Jardinería y Paisajismo
+                        </a>
+                      </h5>
+                      <p class="card-text">Diseño y mantenimiento de espacios verdes, así como instalación de sistemas
+                        de riego.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Limpieza y Mantenimiento" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-limpieza-mantenimiento"
+                          class="stretched-link text-decoration-none text-white">
+                          Limpieza y Mantenimiento
+                        </a>
+                      </h5>
+                      <p class="card-text">Limpieza de viviendas y locales, así como mantenimiento de instalaciones.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card shadow-sm">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                    <svg aria-label="Mudanzas y Transporte" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group"> <button type="button"
-                            class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div> <small class="text-body-secondary">9 mins</small>
-                      </div>
+                      <h5 class="card-title">
+                        <a href="#seccion-mudanzas-transporte" class="stretched-link text-decoration-none text-white">
+                          Mudanzas y Transporte
+                        </a>
+                      </h5>
+                      <p class="card-text">Traslado de muebles y pertenencias, así como transporte de mercancías.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Cerrajería" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-cerrajeria" class="stretched-link text-decoration-none text-white">
+                          Cerrajería
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación y reparación de cerraduras, llaves y sistemas de seguridad.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Aire Acondicionado y Climatización" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-aire-acondicionado" class="stretched-link text-decoration-none text-white">
+                          Aire Acondicionado y Climatización
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación y reparación de sistemas de aire acondicionado y climatización.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Herrería y Soldadura" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-herreria-soldadura" class="stretched-link text-decoration-none text-white">
+                          Herrería y Soldadura
+                        </a>
+                      </h5>
+                      <p class="card-text">Fabricación, reparación e instalación de estructuras metálicas, rejas,
+                        portones, barandas y cerramientos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Construcción en Seco" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-construccion-seco" class="stretched-link text-decoration-none text-white">
+                          Construcción en Seco y Durlock
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación de tabiques divisorios, cielorrasos suspendidos, molduras y
+                        aislaciones en placas de yeso.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Impermeabilización" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-impermeabilizacion" class="stretched-link text-decoration-none text-white">
+                          Impermeabilización y Techado
+                        </a>
+                      </h5>
+                      <p class="card-text">Colocación de membranas asfálticas, sellado de grietas, pintura poliuretánica
+                        y reparación de cubiertas.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Reparación de Electrodomésticos" class="bd-placeholder-img card-img-top"
+                      height="225" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-linea-blanca" class="stretched-link text-decoration-none text-white">
+                          Reparación de Electrodomésticos y Línea Blanca
+                        </a>
+                      </h5>
+                      <p class="card-text">Diagnóstico y service técnico de lavarropas, secarropas, heladeras,
+                        lavavajillas y microondas multimarca.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Refrigeración Comercial" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-refrigeracion" class="stretched-link text-decoration-none text-white">
+                          Refrigeración Comercial e Industrial
+                        </a>
+                      </h5>
+                      <p class="card-text">Mantenimiento correctivo y preventivo de cámaras frigoríficas, bateas,
+                        vitrinas exhibidoras y chillers.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Redes y Conectividad" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-redes" class="stretched-link text-decoration-none text-white">
+                          Redes, Cableado Estructurado y Fibra Óptica
+                        </a>
+                      </h5>
+                      <p class="card-text">Tendido de cableado UTP/STP, fusión de fibra óptica, armado de racks y
+                        certificación de puntos de red.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Soporte Informático" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-soporte-it" class="stretched-link text-decoration-none text-white">
+                          Soporte Técnico y Mantenimiento Informático
+                        </a>
+                      </h5>
+                      <p class="card-text">Reparación de hardware, optimización de sistemas operativos, eliminación de
+                        malware y copias de seguridad.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Seguridad y CCTV" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-cctv" class="stretched-link text-decoration-none text-white">
+                          Seguridad Electrónica, Cámaras y CCTV
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación y configuración de cámaras de seguridad IP y HD, alarmas
+                        comunitarias y monitoreo remoto.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Automatización de Portones" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-automatizacion" class="stretched-link text-decoration-none text-white">
+                          Automatización de Portones y Control de Acceso
+                        </a>
+                      </h5>
+                      <p class="card-text">Montaje de motores corredizos, levadizos y batientes, con cerraduras
+                        magnéticas y lectores biométricos.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Energía Solar" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-energia-solar" class="stretched-link text-decoration-none text-white">
+                          Energía Solar y Paneles Fotovoltaicos
+                        </a>
+                      </h5>
+                      <p class="card-text">Dimensionamiento e instalación de sistemas solares on-grid y off-grid,
+                        inversores y termotanques solares.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Tornería" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-torneria" class="stretched-link text-decoration-none text-white">
+                          Tornería y Mecanizado
+                        </a>
+                      </h5>
+                      <p class="card-text">Fabricación de piezas mecánicas a medida, rectificados, roscados, fresado y
+                        alesado de precisión industrial.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Mecánica Automotriz" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-mecanica" class="stretched-link text-decoration-none text-white">
+                          Mantenimiento y Mecánica Automotriz
+                        </a>
+                      </h5>
+                      <p class="card-text">Escaneo computarizado, cambio de fluidos, distribución, frenos y tren
+                        delantero para vehículos particulares y utilitarios.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Bombas de Agua" class="bd-placeholder-img card-img-top" height="225" width="100%"
+                      xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-bombas-agua" class="stretched-link text-decoration-none text-white">
+                          Bombas de Agua y Presurizadoras
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación, bobinado y mantenimiento de bombas sumergibles, periféricas,
+                        centrífugas y sistemas presurizadores.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Control de Plagas" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-control-plagas" class="stretched-link text-decoration-none text-white">
+                          Control de Plagas y Fumigación
+                        </a>
+                      </h5>
+                      <p class="card-text">Desinsectación, desratización, control de termitas y desinfección preventiva
+                        para viviendas, locales e industrias.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Tratamiento de Pisos" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-pulido-pisos" class="stretched-link text-decoration-none text-white">
+                          Tratamiento y Pulido de Pisos
+                        </a>
+                      </h5>
+                      <p class="card-text">Pulido, plastificado, hidrolaqueado de maderas y vitrificado o abrillantado
+                        para superficies de mosaico y mármol.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Reparación de Celulares" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-celulares" class="stretched-link text-decoration-none text-white">
+                          Reparación de Celulares y Microelectrónica
+                        </a>
+                      </h5>
+                      <p class="card-text">Cambio de módulos display, pines de carga, baterías y microsoldadura en
+                        placas lógicas de teléfonos y tablets.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Grupos Electrógenos" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-electrogenos" class="stretched-link text-decoration-none text-white">
+                          Grupo Electrógeno y Grupos Térmicos
+                        </a>
+                      </h5>
+                      <p class="card-text">Instalación de tableros de transferencia automática, mantenimiento preventivo
+                        de motores diésel/gasolina y generadores.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Domótica e Inmótica" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-domotica" class="stretched-link text-decoration-none text-white">
+                          Domótica e Inmótica
+                        </a>
+                      </h5>
+                      <p class="card-text">Automatización de iluminación, persianas, climatización inteligente y control
+                        por comandos de voz o aplicaciones móviles.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Carpintería de Aluminio" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-aluminio" class="stretched-link text-decoration-none text-white">
+                          Vidriería y Carpintería de Aluminio
+                        </a>
+                      </h5>
+                      <p class="card-text">Fabricación de aberturas de aluminio a medida, cerramientos vidriados,
+                        mamparas de baño y doble vidriado hermético (DVH).</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <svg aria-label="Aislación Térmica y Acústica" class="bd-placeholder-img card-img-top" height="225"
+                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="#seccion-aislacion" class="stretched-link text-decoration-none text-white">
+                          Aislación Térmica y Acústica
+                        </a>
+                      </h5>
+                      <p class="card-text">Aplicación de poliuretano expandido, celulosa proyectada, lana de vidrio y
+                        paneles acústicos para control de ruido y temperatura.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <section id="buscador">
-            <h2>Buscador de Servicios</h2>
-            <p>Encuentra el servicio que necesitas de manera rápida y sencilla.</p>
-            <!-- El método GET permite que los resultados de búsqueda generen URLs rastreables si es necesario -->
-            <form action="http://127.0.0.1:5500/servicios.html#" method="GET" role="">
-              <label for="buscar">Filtrar servicios por palabra clave:</label>
-              <input type="search" id="buscar" name="query" placeholder="Ej. limpieza, mudanza, cerrajería..." required>
-              <button type="submit">Buscar servicios</button>
-            </form>
-          </section>
   </main>
 
-  <div class="container">
-    <footer class="py-5">
+
+  <footer class="py-5">
+    <div class="container">
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+          <h5>Secciones</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Servicios</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacto</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sobre Nosotros</a></li>
           </ul>
         </div>
         <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Contacto</h5>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
-                class="visually-hidden">Email address</label> <input id="newsletter1" type="email" class="form-control"
-                placeholder="Email address"> <button class="btn btn-primary" type="button">Enviar</button> </div>
-          </form>
         </div>
       </div>
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
@@ -504,14 +837,9 @@
               </svg></a></li>
         </ul>
       </div>
-    </footer>
-  </div>
-  <!--<footer>
-    <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
-    <address>
-      <p>Contacto: <a href="mailto:contacto@oficiosya.com">contacto@oficiosya.com</a></p>
-    </address>
-  </footer>-->
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
