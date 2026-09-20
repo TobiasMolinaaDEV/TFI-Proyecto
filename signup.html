@@ -151,7 +151,7 @@
 </head>
 
 <body>
-    <header>
+<header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
@@ -212,33 +212,50 @@
     </nav>
   </header>
 
-    <main>
-        <section id="contacto">
-            <div class="contenedor-formulario">
-            <h1>Ponte en contacto con nosotros</h1>
-            <p>Completa el formulario indicando tu solicitud y te responderemos a la brevedad.</p>
+    <main class="d-flex align-items-center justify-content-center min-vh-100 py-5">
+  <div class="row w-100 justify-content-center">
+    <div class="col-11 col-sm-8 col-md-6 col-lg-4">
 
-            <form action="http://127.0.0" method="POST">
-                <div>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
-                </div>
+      <form class="text-center w-100">
+        <h1 class="h3 mb-3 fw-normal">Crear cuenta</h1>
 
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ej. juan@correo.com" required>
-                </div>
+        <div class="form-floating mb-2 text-start w-100">
+          <input type="text" class="form-control w-100" id="floatingName" placeholder="Juan Pérez">
+          <label for="floatingName">Nombre completo</label>
+        </div>
 
-                <div>
-                    <label for="mensaje">Detalles de tu solicitud:</label>
-                    <textarea class="textarea" id="mensaje" name="mensaje" placeholder="Escribe aquí su consulta." rows="10" required></textarea>
-                </div>
+        <div class="form-floating mb-2 text-start w-100">
+          <input type="email" class="form-control w-100" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail">Email</label>
+        </div>
 
-                <button type="submit">Enviar mensaje</button>
-            </form>
-            </div>
-        </section>
-    </main>
+        <div class="form-floating mb-2 text-start w-100">
+          <input type="password" class="form-control w-100" id="floatingNewPassword" placeholder="Contraseña">
+          <label for="floatingNewPassword">Contraseña</label>
+        </div>
+
+        <div class="form-floating mb-3 text-start w-100">
+          <input type="password" class="form-control w-100" id="floatingConfirmPassword" placeholder="Repetir contraseña">
+          <label for="floatingConfirmPassword">Confirmar contraseña</label>
+        </div>
+
+        <div class="form-check d-flex justify-content-center gap-2 mb-3">
+          <input class="form-check-input" type="checkbox" value="terms" id="checkTerms" required>
+          <label class="form-check-label" for="checkTerms">
+            Acepto los <a href="#" class="text-decoration-none">términos y condiciones</a>
+          </label>
+        </div>
+
+        <button class="btn btn-primary w-100 py-2 mb-3" type="submit">Registrarse</button>
+
+        <p class="text-body-secondary">
+          ¿Ya tienes cuenta? <a href="/login.html" class="text-decoration-none">Inicia sesión</a>
+        </p>
+      </form>
+
+    </div>
+  </div>
+</main>
 
     <footer class="py-5">
     <div class="container">
