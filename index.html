@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Encuentra trabajadores | OficiosYA</title>
+    <meta name="description" content="Encuentra trabajadores calificados para tus proyectos en OficiosYA. Conecta con profesionales confiables y eficientes en tu área.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oficiosya.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Open Graph para optimizar cómo se comparte en Redes Sociales (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Encuentra trabajadores | OficiosYA">
+    <meta property="og:description" content="Encuentra trabajadores calificados para tus proyectos en OficiosYA. Conecta con profesionales confiables y eficientes en tu área.">
+    <meta property="og:image" content="https://oficiosya.com/imagenes/compartir-seo.jpg">
+    <meta property="og:url" content="https://oficiosya.com">
 
-  <title>Encuentra trabajadores | OficiosYA</title>
-  <meta name="description"
-    content="Encuentra trabajadores calificados para tus proyectos en OficiosYA. Conecta con profesionales confiables y eficientes en tu área.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://oficiosya.com">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Encuentra trabajadores | OficiosYA">
-  <meta property="og:description"
-    content="Encuentra trabajadores calificados para tus proyectos en OficiosYA. Conecta con profesionales confiables y eficientes en tu área.">
-  <meta property="og:image" content="https://oficiosya.com/imagenes/compartir-seo.jpg">
-  <meta property="og:url" content="https://oficiosya.com">
-
-  <script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
@@ -145,691 +142,230 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-        <a class="navbar-brand text-white fw-bold" href="/index.html">
-          <img src="/img/loro.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          OficiosYA
-        </a>
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+        <img src="/img/loro.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        OficiosYA
+      </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOficiosYA"
-          aria-controls="navbarOficiosYA" aria-expanded="false" aria-label="Abrir menú" data-bs-theme="dark">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- BOTÓN RESPONSIVE -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOficiosYA"
+        aria-controls="navbarOficiosYA" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarOficiosYA">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white fw-bold" href="/index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white fw-bold" href="/servicios.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="/servicios.html">Todos los servicios</a></li>
-                <li><a class="dropdown-item fw-bold" href="/servicios.html?query=Servicio1#">Servicio1</a></li>
-                <li><a class="dropdown-item fw-bold" href="/servicios.html?query=Servicio2#">Servicio2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="/about_me.html">Sobre Nosotros</a>
-            </li>
-          </ul>
+      <!-- CONTENIDO -->
+      <div class="collapse navbar-collapse" id="navbarOficiosYA">
 
-          <div class="d-flex gap-2">
-            <form role="search" action="http://127.0.0.1:5500/servicios.html#" method="GET">
-              <input class="form-control" type="search" id="buscar" name="query" placeholder="Buscar servicios"
-                aria-label="Buscar Servicios" required>
-            </form>
+        <!-- LISTADO CENTRADO EN LA PANTALLA -->
+        <ul class="navbar-nav position-absolute start-50 translate-middle-x">
+          <li class="nav-item">
+            <a class="nav-link active" href="/index.html">Inicio</a>
+          </li>
 
-            <a class="btn btn-primary fw-bold" href="/signup.html">
-              Registrarse
-            </a>
-            <a class="btn btn-primary fw-bold" href="/login.html">
-              Iniciar sesión
-            </a>
-            <!--<a class="btn btn-primary" href="/login.html">
-              Conviértete en profesional
-            </a >-->
-          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/servicios.html">Servicios</a>
+          </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about_me.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+
+        <!-- BOTONES AL FINAL -->
+        <div class="d-flex gap-2 ms-auto">
+          <button class="btn btn-primary">
+            Registrarse / Iniciar sesión
+          </button>
+
+          <button class="btn btn-primary">
+            Conviértete en profesional
+          </button>
         </div>
 
       </div>
-    </nav>
+
+    </div>
+  </nav>
   </header>
   <main>
     <section id="principal" class="container-fluid p-0">
+  
       <div class="row align-items-center g-0 w-100">
+  
+        <!-- IZQUIERDA -->
         <div class="col-2 text-start">
           <img src="/img/top_left_shape.svg" alt="Forma superior izquierda" class="img-fluid
                   forma-izquierda">
         </div>
-
+  
+        <!-- CENTRO -->
         <div class="col-8">
           <div class="card-overlay-main position-relative overflow-hidden">
+  
             <img src="/img/trabajador-carousel.jpg" alt="Trabajador de OficiosYA" class="w-100 h-100">
+  
             <div class="overlay"></div>
+  
             <div class="text-overlay">
               <h1>OficiosYA - Servicios Profesionales a tu Medida</h1>
-
+  
               <p>
                 Servicios de calidad para satisfacer tus necesidades.
               </p>
-
+  
               <a href="/contacto.html" class="btn btn-primary">
                 Ponte en contacto con nosotros
               </a>
-
-              <!--<br>
-
+  
+              <br>
+  
               <a href="/trabajos.html" class="btn btn-secondary">
                 Ver oportunidades de trabajo
-              </a>-->
+              </a>
             </div>
+  
           </div>
         </div>
-
+  
+        <!-- DERECHA -->
         <div class="col-2 text-end align-self-start">
           <img src="/img/top_right_shape.svg" alt="Forma superior derecha" class="img-fluid 
             forma-derecha"">
-        </div>
+          </div>
   
       </div>
+  
     </section>
-      <h2 id="titulo-servicios">Nuestros Servicios de Oficios y Mantenimiento</h2>
-          <div class="album py-5 bg-body-tertiary">
-            <div class="container">
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Plomería
-                        </a>
-                      </h5>
-                      <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Instalaciones de Gas" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Instalaciones de Gas
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación y reparación de instalaciones de gas en viviendas y locales.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Albañilería y Reformas" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Albañilería y Reformas
-                        </a>
-                      </h5>
-                      <p class="card-text">Arreglos de mampostería, colocación de cerámicos y revoques.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Electricidad" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Electricidad
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación y reparación de instalaciones eléctricas en viviendas y locales.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Carpintería y Ebanistería" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Carpintería y Ebanistería
-                        </a>
-                      </h5>
-                      <p class="card-text">Fabricación y reparación de muebles, puertas, ventanas y otros elementos de
-                        madera.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Pintura y Decoración" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Pintura y Decoración
-                        </a>
-                      </h5>
-                      <p class="card-text">Pintura de viviendas y locales, así como trabajos de decoración.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Jardinería y Paisajismo" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Jardinería y Paisajismo
-                        </a>
-                      </h5>
-                      <p class="card-text">Diseño y mantenimiento de espacios verdes, así como instalación de sistemas
-                        de riego.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Limpieza y Mantenimiento" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Limpieza y Mantenimiento
-                        </a>
-                      </h5>
-                      <p class="card-text">Limpieza de viviendas y locales, así como mantenimiento de instalaciones.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Mudanzas y Transporte" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Mudanzas y Transporte
-                        </a>
-                      </h5>
-                      <p class="card-text">Traslado de muebles y pertenencias, así como transporte de mercancías.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Cerrajería" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Cerrajería
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación y reparación de cerraduras, llaves y sistemas de seguridad.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Aire Acondicionado y Climatización" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Aire Acondicionado y Climatización
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación y reparación de sistemas de aire acondicionado y climatización.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Herrería y Soldadura" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Herrería y Soldadura
-                        </a>
-                      </h5>
-                      <p class="card-text">Fabricación, reparación e instalación de estructuras metálicas, rejas,
-                        portones, barandas y cerramientos.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Construcción en Seco" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Construcción en Seco y Durlock
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación de tabiques divisorios, cielorrasos suspendidos, molduras y
-                        aislaciones en placas de yeso.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Impermeabilización" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Impermeabilización y Techado
-                        </a>
-                      </h5>
-                      <p class="card-text">Colocación de membranas asfálticas, sellado de grietas, pintura poliuretánica
-                        y reparación de cubiertas.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Reparación de Electrodomésticos" class="bd-placeholder-img card-img-top"
-                      height="225" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Reparación de Electrodomésticos y Línea Blanca
-                        </a>
-                      </h5>
-                      <p class="card-text">Diagnóstico y service técnico de lavarropas, secarropas, heladeras,
-                        lavavajillas y microondas multimarca.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Refrigeración Comercial" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Refrigeración Comercial e Industrial
-                        </a>
-                      </h5>
-                      <p class="card-text">Mantenimiento correctivo y preventivo de cámaras frigoríficas, bateas,
-                        vitrinas exhibidoras y chillers.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Redes y Conectividad" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Redes, Cableado Estructurado y Fibra Óptica
-                        </a>
-                      </h5>
-                      <p class="card-text">Tendido de cableado UTP/STP, fusión de fibra óptica, armado de racks y
-                        certificación de puntos de red.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Soporte Informático" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Soporte Técnico y Mantenimiento Informático
-                        </a>
-                      </h5>
-                      <p class="card-text">Reparación de hardware, optimización de sistemas operativos, eliminación de
-                        malware y copias de seguridad.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Seguridad y CCTV" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Seguridad Electrónica, Cámaras y CCTV
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación y configuración de cámaras de seguridad IP y HD, alarmas
-                        comunitarias y monitoreo remoto.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Automatización de Portones" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Automatización de Portones y Control de Acceso
-                        </a>
-                      </h5>
-                      <p class="card-text">Montaje de motores corredizos, levadizos y batientes, con cerraduras
-                        magnéticas y lectores biométricos.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Energía Solar" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Energía Solar y Paneles Fotovoltaicos
-                        </a>
-                      </h5>
-                      <p class="card-text">Dimensionamiento e instalación de sistemas solares on-grid y off-grid,
-                        inversores y termotanques solares.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Tornería" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Tornería y Mecanizado
-                        </a>
-                      </h5>
-                      <p class="card-text">Fabricación de piezas mecánicas a medida, rectificados, roscados, fresado y
-                        alesado de precisión industrial.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Mecánica Automotriz" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Mantenimiento y Mecánica Automotriz
-                        </a>
-                      </h5>
-                      <p class="card-text">Escaneo computarizado, cambio de fluidos, distribución, frenos y tren
-                        delantero para vehículos particulares y utilitarios.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Bombas de Agua" class="bd-placeholder-img card-img-top" height="225" width="100%"
-                      xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Bombas de Agua y Presurizadoras
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación, bobinado y mantenimiento de bombas sumergibles, periféricas,
-                        centrífugas y sistemas presurizadores.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Control de Plagas" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Control de Plagas y Fumigación
-                        </a>
-                      </h5>
-                      <p class="card-text">Desinsectación, desratización, control de termitas y desinfección preventiva
-                        para viviendas, locales e industrias.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Tratamiento de Pisos" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Tratamiento y Pulido de Pisos
-                        </a>
-                      </h5>
-                      <p class="card-text">Pulido, plastificado, hidrolaqueado de maderas y vitrificado o abrillantado
-                        para superficies de mosaico y mármol.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Reparación de Celulares" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Reparación de Celulares y Microelectrónica
-                        </a>
-                      </h5>
-                      <p class="card-text">Cambio de módulos display, pines de carga, baterías y microsoldadura en
-                        placas lógicas de teléfonos y tablets.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Grupos Electrógenos" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Grupo Electrógeno y Grupos Térmicos
-                        </a>
-                      </h5>
-                      <p class="card-text">Instalación de tableros de transferencia automática, mantenimiento preventivo
-                        de motores diésel/gasolina y generadores.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Domótica e Inmótica" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Domótica e Inmótica
-                        </a>
-                      </h5>
-                      <p class="card-text">Automatización de iluminación, persianas, climatización inteligente y control
-                        por comandos de voz o aplicaciones móviles.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Carpintería de Aluminio" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Vidriería y Carpintería de Aluminio
-                        </a>
-                      </h5>
-                      <p class="card-text">Fabricación de aberturas de aluminio a medida, cerramientos vidriados,
-                        mamparas de baño y doble vidriado hermético (DVH).</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm h-100">
-                    <svg aria-label="Aislación Térmica y Acústica" class="bd-placeholder-img card-img-top" height="225"
-                      width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/technician.png" width="100%" height="100%"
-                        preserveAspectRatio="xMidYMid slice" />
-                    </svg>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                        <a href="/servicios.html" class="stretched-link text-decoration-none text-white">
-                          Aislación Térmica y Acústica
-                        </a>
-                      </h5>
-                      <p class="card-text">Aplicación de poliuretano expandido, celulosa proyectada, lana de vidrio y
-                        paneles acústicos para control de ruido y temperatura.</p>
-                    </div>
-                  </div>
-                </div>
+    <section>
+      <br>
+      <br>
+      <br><h2 id="pepito">Nuestros Servicios de Oficios y Mantenimiento</h2>
+      
+      <section id="servicios" class="container">
+        <div class="row g-4">
+      
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="servicio card">
+              <img src="/img/electrician.png" class="card-img-top" alt="Imagen de Electricista">
+              <div class="card-body">
+                <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.</p>
               </div>
-            </div>
-          </div>
+            </article>
+  
+            <article class="servicio" style="width: 18rem;">
+              <img src="/img/gasista.jpeg " class="card-img-top" alt="Imagen de Gasista">
+              <div class="card-body">
+                <p class="card-text">Reparación de filtraciones, destapes de cañerías e instalación de griferías.</p>
+              </div>
+            </article>
+  
+  
+            <article class="servicio">
+              <h3>Instalaciones de Gas</h3>
+              <p>Detección de fugas, habilitaciones e instalación de estufas y calefones por gasista matriculado.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#instalaciones-gas"
+                title="Saber más sobre gasistas matriculados">Ver detalles de Instalaciones de Gas</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Albañilería y Reformas</h3>
+              <p>Arreglos de mampostería, colocación de cerámicos y revoques.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#albañileria-reformas"
+                title="Saber más sobre albañilería y reformas del hogar">Ver detalles de Albañilería y Reformas</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Electricidad</h3>
+              <p>Reparación de instalaciones eléctricas, iluminación y mantenimiento de tableros.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#electricidad"
+                title="Saber más sobre electricistas profesionales">Ver detalles de Electricidad</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Carpintería y Ebanistería</h3>
+              <p>Fabricación y reparación de muebles, puertas y ventanas de madera.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#carpinteria-ebanisteria"
+                title="Saber más sobre trabajos de carpintería a medida">Ver detalles de Carpintería y Ebanistería</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Pintura y Decoración</h3>
+              <p>Pintura de interiores y exteriores, decoración y acabados.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#pintura-decoracion"
+                title="Saber más sobre servicios de pintura profesional">Ver detalles de Pintura y Decoración</a>
+            </article>
+
+
+            <article class="servicio">
+              <h3>Jardinería y Paisajismo</h3>
+              <p>Mantenimiento de jardines, diseño de paisajes y cuidado de plantas.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#jardineria-paisajismo"
+                title="Saber más sobre mantenimiento de jardines y paisajes">Ver detalles de Jardinería y Paisajismo</a>
+            </article>
+            <article class="servicio">
+              <h3>Limpieza y Mantenimiento</h3>
+              <p>Servicios de limpieza profesional para hogares y oficinas.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#limpieza-mantenimiento"
+                title="Saber más sobre limpieza profesional en casas y oficinas">Ver detalles de Limpieza y
+                Mantenimiento</a>
+            </article>
+            <article class="servicio">
+              <h3>Mudanzas y Transporte</h3>
+              <p>Servicios de mudanza, transporte de muebles y logística.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#mudanzas-transporte"
+                title="Saber más sobre fletes y mudanzas seguras">Ver detalles de Mudanzas y Transporte</a>
+            </article>
+            <article class="servicio">
+              <h3>Cerrajería</h3>
+              <p>Apertura de cerraduras, duplicado de llaves y reparación de sistemas de seguridad.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#cerrajeria"
+                title="Saber más sobre cerrajeros de urgencia y seguridad">Ver detalles de Cerrajería</a>
+            </article>
+            <article class="servicio">
+              <h3>Aire Acondicionado y Climatización</h3>
+              <p>Instalación, mantenimiento y reparación de sistemas de aire acondicionado y calefacción.</p>
+              <a href="http://127.0.0.1:5500/servicios.html#aire-acondicionado-climatizacion"
+                title="Saber más sobre instalación y service de aire acondicionado">Ver detalles de Aire Acondicionado</a>
+            </article>
+          </section>
+  
+          <section id="buscador">
+            <h2>Buscador de Servicios</h2>
+            <p>Encuentra el servicio que necesitas de manera rápida y sencilla.</p>
+  
+            <!-- El método GET permite que los resultados de búsqueda generen URLs rastreables si es necesario -->
+            <form action="http://127.0.0.1:5500/servicios.html#" method="GET" role="">
+              <label for="buscar">Filtrar servicios por palabra clave:</label>
+              <input type="search" id="buscar" name="query" placeholder="Ej. limpieza, mudanza, cerrajería..." required>
+              <button type="submit">Buscar servicios</button>
+            </form>
+          </section>
   </main>
 
-
-  <footer class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Secciones</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-            <li class="nav-item mb-2"><a href="/servicios.html" class="nav-link p-0 text-body-secondary">Servicios</a></li>
-            <li class="nav-item mb-2"><a href="/contacto.html" class="nav-link p-0 text-body-secondary">Contacto</a></li>
-            <li class="nav-item mb-2"><a href="/about_me.html" class="nav-link p-0 text-body-secondary">Sobre Nosotros</a></li>
-          </ul>
-        </div>
-        <div class="col-md-5 offset-md-1 mb-3">
-        </div>
-      </div>
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                height="24" aria-hidden="true">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
+    <address>
+      <p>Contacto: <a href="mailto:contacto@oficiosya.com">contacto@oficiosya.com</a></p>
+    </address>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
