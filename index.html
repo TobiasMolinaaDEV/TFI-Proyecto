@@ -152,66 +152,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+  <div id="header-global"></div>
 
-        <a class="navbar-brand text-white fw-bold" href="/index.html">
-          <img src="/img/loro.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          OficiosYA
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarOficiosYA"
-          aria-controls="navbarOficiosYA" aria-expanded="false" aria-label="Abrir menú" data-bs-theme="dark">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarOficiosYA">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white fw-bold" href="/index.html">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white fw-bold" href="/servicios.html" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="/servicios.html">Todos los servicios</a></li>
-                <li><a class="dropdown-item fw-bold" href="/servicios.html?query=Servicio1#">Servicio1</a></li>
-                <li><a class="dropdown-item fw-bold" href="/servicios.html?query=Servicio2#">Servicio2</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="/contacto.html">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white fw-bold" href="/about_me.html">Sobre Nosotros</a>
-            </li>
-          </ul>
-
-          <div class="d-flex gap-2">
-            <form role="search" action="http://127.0.0.1:5500/servicios.html#" method="GET">
-              <input class="form-control" type="search" id="buscar" name="query" placeholder="Buscar servicios"
-                aria-label="Buscar Servicios" required>
-            </form>
-
-            <a class="btn btn-primary fw-bold" href="/signup.html">
-              Registrarse
-            </a>
-            <a class="btn btn-primary fw-bold" href="/login.html">
-              Iniciar sesión
-            </a>
-            <!--<a class="btn btn-primary" href="/login.html">
-              Conviértete en profesional
-            </a >-->
-          </div>
-
-        </div>
-
-      </div>
-    </nav>
-  </header>
   <main>
     <section id="principal" class="container-fluid p-0">
       <div class="row align-items-center g-0 w-100">
@@ -256,7 +198,7 @@
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Plomero" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/plomero.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
@@ -273,10 +215,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Instalaciones de Gas" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/gasista.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -289,10 +232,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Albañilería y Reformas" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/mamposteria.jpeg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -306,10 +249,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Electricidad" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/electricista.jpeg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -324,10 +267,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Carpintería y Ebanistería" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/carpintero.jpeg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -342,10 +285,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Pintura y Decoración" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/pintor.jpeg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -358,10 +302,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Jardinería y Paisajismo" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/jardineria.jpg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -376,10 +320,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Limpieza y Mantenimiento" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/limpieza.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -392,10 +337,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Mudanzas y Transporte" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/mudanzas.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -408,10 +354,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Cerrajería" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/cerrajeria.jpg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -425,10 +371,10 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Aire Acondicionado y Climatización" class="bd-placeholder-img card-img-top"
                       height="225" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/climatizacion.jpg" width="100%" height="100%"
+                      <image href="img/technician.png" width="100%" height="100%"
                         preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
@@ -443,10 +389,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Herrería y Soldadura" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/herreria.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -460,7 +407,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Construcción en Seco" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/construcciondurlock.jpg" width="100%" height="100%"
@@ -478,7 +425,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Impermeabilización" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/impermeabilizacion.jpg" width="100%" height="100%"
@@ -496,7 +443,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Reparación de Electrodomésticos" class="bd-placeholder-img card-img-top"
                       height="225" width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/reparacionelect.jpg" width="100%" height="100%"
@@ -514,7 +461,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Refrigeración Comercial" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/refrigeracion.jpg" width="100%" height="100%"
@@ -532,7 +479,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Redes y Conectividad" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/redescableado.jpg" width="100%" height="100%"
@@ -550,7 +497,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Soporte Informático" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/soportetecnico.jpg" width="100%" height="100%"
@@ -568,7 +515,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Seguridad y CCTV" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/seguridadelectronica.jpg" width="100%" height="100%"
@@ -586,7 +533,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Automatización de Portones" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/automatizacionportones.jpg" width="100%" height="100%"
@@ -604,7 +551,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Energía Solar" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/energiasolar.jpg" width="100%" height="100%"
@@ -622,10 +569,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Tornería" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/torneria.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -639,7 +587,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Mecánica Automotriz" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/mecanica.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
@@ -656,7 +604,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Bombas de Agua" class="bd-placeholder-img card-img-top" height="225" width="100%"
                       xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/bombasdeagua.jpg" width="100%" height="100%"
@@ -674,7 +622,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Control de Plagas" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/controlplagas.jpg" width="100%" height="100%"
@@ -692,7 +640,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Tratamiento de Pisos" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/tratamientopisos.jpg" width="100%" height="100%"
@@ -710,7 +658,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Reparación de Celulares" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/reparacioncelulares.jpg" width="100%" height="100%"
@@ -728,7 +676,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Grupos Electrógenos" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/grupoelectrogeno.jpg" width="100%" height="100%"
@@ -746,10 +694,11 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Domótica e Inmótica" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
-                      <image href="img/domotica.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+                      <image href="img/technician.png" width="100%" height="100%"
+                        preserveAspectRatio="xMidYMid slice" />
                     </svg>
                     <div class="card-body">
                       <h5 class="card-title">
@@ -763,7 +712,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Carpintería de Aluminio" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/vidrieria.jpg" width="100%" height="100%"
@@ -781,7 +730,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card shadow-sm h-100">
+                  <div class="card shadow-sm h-100 servicio">
                     <svg aria-label="Aislación Térmica y Acústica" class="bd-placeholder-img card-img-top" height="225"
                       width="100%" xmlns="http://www.w3.org/2000/svg" role="img">
                       <image href="img/aislaciontermica.jpg" width="100%" height="100%"
@@ -803,45 +752,13 @@
           </div>
   </main>
 
-
-  <footer class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Secciones</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="/index.html" class="nav-link p-0 text-body-secondary">Inicio</a></li>
-            <li class="nav-item mb-2"><a href="/servicios.html" class="nav-link p-0 text-body-secondary">Servicios</a>
-            </li>
-            <li class="nav-item mb-2"><a href="/contacto.html" class="nav-link p-0 text-body-secondary">Contacto</a>
-            </li>
-            <li class="nav-item mb-2"><a href="/about_me.html" class="nav-link p-0 text-body-secondary">Sobre
-                Nosotros</a></li>
-          </ul>
-        </div>
-        <div class="col-md-5 offset-md-1 mb-3">
-        </div>
-      </div>
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>&copy; 2026 OficiosYA. Todos los derechos reservados.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24"
-                height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                height="24" aria-hidden="true">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <div id="header-global"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="javascript/main.js"></script>
+  <script src="javascript/script.js"></script>
 </body>
 
 </html>
